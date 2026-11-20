@@ -6,6 +6,11 @@ name: ks-brief
 description: "快手数据日报数据源（只读）：关键词搜视频、博主作品与粉丝数据、视频评论，输出 JSON，不登录不发布。触发词：快手、Kuaishou、kwai、快手搜索、快手评论、快手博主。用户要查快手视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "快手数据日报｜每日汇总·作品表现·涨粉追踪·周报成稿"
+display_name_en: "Kuaishou Brief"
+description_zh: "快手数据日报数据源（只读，无需登录你的快手账号，不发布不点赞不评论，无风控封号问题）：一条命令取到快手公开数据，全部以结构化 JSON 输出，可直接导入 Excel/BI 或交给 AI 汇总成日报/周报。\n\n四类能力：①关键词搜视频，支持综合/最新发布/最多点赞排序，不限/近1日/近7日/近1月时间范围与时长筛选；②评论抓取，用视频链接或 3x 视频 id 取评论区，用于情绪与需求归因；③博主作品列表，按最新/最热排序，带发布时间与互动数据；④博主粉丝/获赞/关注画像（--limit 0），用于互动率与 KOL 筛选。\n\n典型产出：每日数据汇总、作品表现复盘、涨粉追踪、发文节奏、选题库、竞品对比、舆情周报、爆款归因报告。\n\n规模：按量 Token 单次最多 10000 条；包月 Token 搜索最多 30、作品最多 50、评论最多 60 条，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only Kuaishou daily-brief data source, no login, no posting or liking, so no ban risk. One command returns public Kuaishou data as structured JSON for Excel, BI or AI-generated daily and weekly reports.\n\nCapabilities: 1) Keyword video search with relevance/newest/most-liked sorting, unlimited/1-day/7-day/30-day windows and duration filters. 2) Comment scraping by video URL or 3x video id for sentiment and demand attribution. 3) Creator post listing sorted by newest or hottest, with publish time and interaction counts. 4) Creator profile stats via --limit 0 (followers, likes, follows) for engagement-rate and KOL screening.\n\nOutputs: daily digests, post performance reviews, follower tracking, posting cadence, topic libraries, competitor tables, sentiment reports, viral attribution.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly plans cap search at 30, posts at 50, comments at 60, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN, no third-party deps."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "📷"
